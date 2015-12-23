@@ -1,0 +1,78 @@
+@sizes: 0 0, xs 3px, s 5px, m 10px, l 15px, xl 20px;
+@directions: top t, right r, bottom b, left l;
+
+// Свойство вендора
+.vendor(@property, @value) {
+  -webkit-@{property}: @value;
+  -moz-@{property}: @value;
+  -ms-@{property}: @value;
+  -o-@{property}: @value;
+    @{property}: @value;
+}
+
+// Без отступов
+.nomp() {
+  margin: 0;
+  padding: 0;
+}
+
+// Граница
+.brd(@color, @style: solid, @width: 1px) {
+  border: @width @style @color !important;
+}
+
+.menu(@inline:inline-block, @back-color:transparent, @link-color:blue, @back-hover-color: transparent, @link-hover-color:darkblue) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: @inline;
+
+      a {
+        display: @inline;
+        text-decoration: none;
+        background-color: @back-color;
+        color: @link-color;
+
+        &:hover {
+          background-color: @back-hover-color;
+          color: @link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+@media-xs: ~"(max-width: 767px)";
+@media-sm: ~"(min-width: 768px) and (max-width: 991px)";
+@media-md: ~"(min-width: 992px) and (max-width: 1199)";
+@media-lg: ~"(min-width: 1200)";
+
+@media-mobile: ~"(max-width: 991px)";
+
+@color-blue:#337ab7;
+@color-darkblue: rgba(22, 28, 54, 1);
+@color-light-gray: rgba(210, 210, 210, 0.8);
+
+
+//@color-link: lighten(@color-darkblue, 40%);
+@color-link: @color-blue;
+@color-link-hover: @color-darkblue;
+@color-hr-light: @color-light-gray;
+
+@topnavbar-height: 100px;
+@topnavbar-height-mobile: 50px;
+@topnavbar-backcolor: @color-darkblue;
+
+@navbar-menu-color: @color-light-gray;
+@navbar-menu-background: @color-darkblue;
+@navbar-menu-hover-color: white;
+@navbar-menu-hover-background: @color-darkblue;
+
+@page-menu-width: 300px;
+@page-menu-backcolor: @color-light-gray;
+@page-menu-forecolor: @color-darkblue;
+
+

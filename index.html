@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AKondakova</title>
+
+    <meta name="keywords" content="">
+
+    <!-- Fonts -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap and Font Awesome css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme stylesheet -->
+    <link href="css/style.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Responsivity for older IE -->
+    <script src="js/respond.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="no-padding">
+
+<!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+<div class="navbar navbar-default navbar-fixed-top yamm" role="navigation" id="navbar">
+    <div class="container">
+        <div class="navbar-header">
+
+            <a class="navbar-brand home" href="index.html">
+                <img src="img/logolinear.png" alt="AKondakova" class="hidden-xs hidden-sm">
+                <img src="img/logosmall.png" alt="AKondakova" class="visible-xs visible-sm"><span class="sr-only">AKondakova</span>
+            </a>
+            <div class="navbar-buttons">
+                <button type="button" class="navbar-toggle btn-primary" data-toggle="collapse"
+                        data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-align-justify"></i>
+                </button>
+                <a class="btn btn-primary navbar-toggle" href="basket.html">
+                    <i class="fa fa-shopping-cart"></i> <span class="hidden-xs">3 items in cart</span>
+                </a>
+                <!--<button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target="#search">-->
+                    <!--<span class="sr-only">Toggle search</span>-->
+                    <!--<i class="fa fa-search"></i>-->
+                <!--</button>-->
+                <!--<button type="button" class="navbar-toggle btn-default" data-toggle="modal" data-target="#login-modal">-->
+                    <!--<span class="sr-only">User login</span>-->
+                    <!--<i class="fa fa-users"></i>-->
+                <!--</button>-->
+
+            </div>
+        </div>
+        <!--/.navbar-header -->
+
+        <div class="navbar-collapse collapse" id="navigation">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li><a class="menu-item" href="#about">О бренде</a></li>
+                <!--<li><a class="menu-item" href="#latest">Новинки</a></li>-->
+                <li><a class="menu-item" href="#collections">Коллекции</a></li>
+                <li><a class="menu-item" href="#press">Пресса</a></li>
+                <li><a class="menu-item" href="#information">Информация</a></li>
+                <li><a class="menu-item" href="#contacts">Контакты</a></li>
+            </ul>
+
+        </div>
+        <!--/.nav-collapse -->
+
+        <div class="navbar-collapse collapse right" id="basket-overview">
+            <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span
+                    class="hidden-sm">3 items <span class="hidden-md">in cart</span></span></a>
+        </div>
+        <!--/.nav-collapse -->
+
+        <!--<div class="navbar-collapse collapse right">-->
+            <!--<button type="button" class="btn navbar-btn btn-default" data-toggle="collapse" data-target="#search">-->
+                <!--<span class="sr-only">Toggle search</span>-->
+                <!--<i class="fa fa-search"></i>-->
+            <!--</button>-->
+        <!--</div>-->
+
+        <!--<div class="navbar-collapse collapse right">-->
+            <!--<button type="button" class="btn navbar-btn btn-default" data-toggle="modal" data-target="#login-modal">-->
+                <!--<span class="sr-only">User login</span>-->
+                <!--<i class="fa fa-users"></i>-->
+            <!--</button>-->
+        <!--</div>-->
+
+        <!--<div class="collapse clearfix" id="search">-->
+
+            <!--<form class="navbar-form" role="search">-->
+                <!--<div class="input-group">-->
+                    <!--<input type="text" class="form-control" placeholder="Search">-->
+                        <!--<span class="input-group-btn">-->
+
+			<!--<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>-->
+
+		    <!--</span>-->
+                <!--</div>-->
+            <!--</form>-->
+
+        <!--</div>-->
+        <!--/.nav-collapse -->
+
+    </div>
+
+
+</div>
+<!-- /#navbar -->
+
+<!-- *** NAVBAR END *** -->
+
+<!-- *** LOGIN MODAL ***
+_________________________________________________________ -->
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="Login">Customer login</h4>
+            </div>
+            <div class="modal-body">
+                <form action="customer-orders.html" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="password">
+                    </div>
+
+                    <p class="text-center">
+                        <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                    </p>
+
+                </form>
+
+                <p class="text-center text-muted">Not registered yet?</p>
+                <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy
+                    and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *** LOGIN MODAL END *** -->
+
+<!-- *** INTRO IMAGE ***
+_________________________________________________________ -->
+<div id="intro">
+    <div class="item">
+        <div class="container">
+            <div class="row">
+                <div class="carousel-caption">
+                    <h1>Anastasia Kondakova</h1>
+                    <h3>Russian Fashion Designer</h3>
+
+                    <!--<p><a class="btn btn-lg btn-primary scroll-to" href="#content" role="button">View our top picks<br class="hidden-md hidden-lg"> for this week</a>-->
+                    <!--</p>-->
+                    <!--<p><a class="btn btn-lg btn-default" href="index.html" role="button">View alternative homepage</a>-->
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *** INTRO IMAGE END *** -->
+
+<div id="all">
+
+    <!-- *** ADVANTAGES ***
+_________________________________________________________ -->
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="col-md-12">
+
+                <div class="box text-center">
+                    <h3 class="text-uppercase">О Бренде</h3>
+
+                    <p class="italic">Бренд AKondakova уже <strong>10 лет</strong> известен на рынке...</p>
+
+                    <div class="same-height-row row">
+                        <div class="col-sm-3">
+                            <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                <div class="icon"><i class="fa fa-heart-o"></i>
+                                </div>
+                                <h4><a href="text.html">Satisfied customers</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                <div class="icon"><i class="fa fa-tags"></i>
+                                </div>
+                                <h4><a href="text.html">Best prices</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                <div class="icon"><i class="fa fa-send-o"></i>
+                                </div>
+                                <h4><a href="faq.html">Next day delivery</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                <div class="icon"><i class="fa fa-refresh"></i>
+                                </div>
+                                <h4><a href="contact.html">Free returns for 3 months</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+
+            </div>
+
+            <div class="col-md-12 clearfix">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex
+                    ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                    dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non
+                    habent claritatem insitam; est usus legentis
+                    in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii
+                    legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                    lectorum. Mirum est notare quam littera
+                    gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
+                    quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+                    sollemnes in futurum.
+                </p>
+            </div>
+
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /#advantages -->
+
+    <!-- *** ADVANTAGES END *** -->
+
+
+    <!-- *** CONTENT ***
+    _________________________________________________________
+    _________________________________________________________
+    -->
+
+    <div id="content">
+        <div class="container">
+            <div class="col-sm-12">
+
+                <div class="box text-center" id="collections">
+                    <h3 class="text-uppercase">Коллекции</h3>
+
+                    <h4 class="text-muted"><span class="accent">Free shipping</span> on all</h4>
+                </div>
+
+                <div class="row products">
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_8961.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">Fur coat with very but very very long name</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_9292.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">White Blouse Armani</a></h3>
+                                <p class="price">
+                                    <del>$280</del>
+                                    $143.00
+                                </p>
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon sale">
+                                <div class="theribbon">SALE</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_9175.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">Black Blouse Versace</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_9472.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">Black Blouse Versace</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_9675.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">White Blouse Armani</a></h3>
+                                <p class="price">
+                                    <del>$280</del>
+                                    $143.00
+                                </p>
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon sale">
+                                <div class="theribbon">SALE</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_8961.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">White Blouse Versace</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_9292.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">White Blouse Versace</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+
+                            <div class="ribbon new">
+                                <div class="theribbon">NEW</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <!-- /.ribbon -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="product">
+                            <div class="image">
+                                <a href="detail.html">
+                                    <img src="img/collections/IMG_8961.jpg" alt="" class="img-responsive image1">
+                                </a>
+                                <div class="quick-view-button">
+                                    <a href="#" data-toggle="modal" data-target="#product-quick-view-modal"
+                                       class="btn btn-default btn-sm">Quick view</a>
+                                </div>
+                            </div>
+                            <!-- /.image -->
+                            <div class="text">
+                                <h3><a href="detail.html">Fur coat</a></h3>
+                                <p class="price">$143.00</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /.product -->
+                    </div>
+                    <!-- /.col-md-4 -->
+
+                    <div class="modal fade" id="product-quick-view-modal" tabindex="-1" role="dialog"
+                         aria-hidden="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+
+                                    <div class="row quick-view product-main">
+                                        <div class="col-sm-6">
+                                            <div class="quick-view-main-image">
+                                                <img src="img/detailbig1.jpg" alt="" class="img-responsive">
+                                            </div>
+
+                                            <div class="ribbon ribbon-quick-view sale">
+                                                <div class="theribbon">SALE</div>
+                                                <div class="ribbon-background"></div>
+                                            </div>
+                                            <!-- /.ribbon -->
+
+                                            <div class="ribbon ribbon-quick-view new">
+                                                <div class="theribbon">NEW</div>
+                                                <div class="ribbon-background"></div>
+                                            </div>
+                                            <!-- /.ribbon -->
+
+                                            <div class="row thumbs">
+                                                <div class="col-xs-4">
+                                                    <a href="img/detailbig1.jpg" class="thumb">
+                                                        <img src="img/detailsquare.jpg" alt="" class="img-responsive">
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a href="img/detailbig2.jpg" class="thumb">
+                                                        <img src="img/detailsquare2.jpg" alt="" class="img-responsive">
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a href="img/detailbig3.jpg" class="thumb">
+                                                        <img src="img/detailsquare3.jpg" alt="" class="img-responsive">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <h2>White Blouse Armani</h2>
+
+                                            <p class="text-muted text-small text-center">White lace top, woven, has a
+                                                round neck, short sleeves, has knitted lining attached</p>
+
+                                            <div class="box">
+
+                                                <form>
+                                                    <div class="sizes">
+
+                                                        <h3>Available sizes</h3>
+
+                                                        <label for="size_s">
+                                                            <a href="#">S</a>
+                                                            <input type="radio" id="size_s" name="size" value="s"
+                                                                   class="size-input">
+                                                        </label>
+                                                        <label for="size_m">
+                                                            <a href="#">M</a>
+                                                            <input type="radio" id="size_m" name="size" value="m"
+                                                                   class="size-input">
+                                                        </label>
+                                                        <label for="size_l">
+                                                            <a href="#">L</a>
+                                                            <input type="radio" id="size_l" name="size" value="l"
+                                                                   class="size-input">
+                                                        </label>
+
+                                                    </div>
+
+                                                    <p class="price">$124.00</p>
+
+                                                    <p class="text-center">
+                                                        <button type="submit" class="btn btn-primary"><i
+                                                                class="fa fa-shopping-cart"></i> Add to cart
+                                                        </button>
+                                                        <button type="submit" class="btn btn-default"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Add to wishlist"><i class="fa fa-heart-o"></i>
+                                                        </button>
+                                                    </p>
+
+
+                                                </form>
+                                            </div>
+                                            <!-- /.box -->
+
+                                            <div class="quick-view-social">
+                                                <h4>Show it to your friends</h4>
+                                                <p>
+                                                    <a href="#" class="external facebook" data-animate-hover="pulse"><i
+                                                            class="fa fa-facebook"></i></a>
+                                                    <a href="#" class="external gplus" data-animate-hover="pulse"><i
+                                                            class="fa fa-google-plus"></i></a>
+                                                    <a href="#" class="external twitter" data-animate-hover="pulse"><i
+                                                            class="fa fa-twitter"></i></a>
+                                                    <a href="#" class="email" data-animate-hover="pulse"><i
+                                                            class="fa fa-envelope"></i></a>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.modal-dialog-->
+                    </div>
+                    <!-- /.modal -->
+
+                </div>
+                <!-- /.products -->
+
+                <!-- *** BLOG HOMEPAGE ***
+_________________________________________________________ -->
+
+                <div class="box text-center" id="press">
+                    <h3 class="text-uppercase">Пресса</h3>
+                    <p class="text-italic text-large">Что пишут о наших коллекциях в прессе?
+                    </p>
+                </div>
+
+                <div id="blog-homepage" class="row">
+                    <div class="col-sm-6">
+                        <div class="post">
+                            <h4><a href="post.html">Fashion Today</a></h4>
+                            <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
+                            </p>
+                            <hr>
+                            <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                                ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                            <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="post">
+                            <h4><a href="post.html">Who is who - example blog post</a></h4>
+                            <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
+                            </p>
+                            <hr>
+                            <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                                ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                            <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /#blog-homepage -->
+
+                <!-- *** BLOG HOMEPAGE END *** -->
+
+                <!-- Information -->
+                <div id="information">
+                    <div class="col-md-12">
+
+                        <div class="box">
+                            <h3 class="text-uppercase" style="text-align: center;">Информация</h3>
+
+                            <div>
+                                <h4>Как сделать заказ</h4>
+                                <ol>
+                                    <li>Выбрать понравившуюся модель и перейти к закладке информации об изделии, кликнув
+                                        на фото.
+                                    </li>
+                                    <li>Выбрать размер, сверив с <a href="" ng-click="scrollTo('sizes')">Таблицей
+                                        размеров.</a>
+                                        <br>
+                                        Все наши изделия выполнены по ГОСТу, но с учетом особенностей типажей женских
+                                        фигур, что дает
+                                        безупречную
+                                        посадку. Если Вы предпочитаете изготовить изделие по индивидуальным меркам,
+                                        просим заранее
+                                        сообщить
+                                        нашему
+                                        менеджеру и уточнить условия выполнения заказа.
+                                    </li>
+                                    <li>Перейти в корзину и проверить правильность заказа.</li>
+                                    <li>Заполнить карточку с контактной информацией и нажать «Отправить».</li>
+                                    <li>Ваш заказ будет обработан и в течение суток с Вами свяжется наш менеджер для
+                                        обсуждения деталей
+                                        доставки.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <!--<hr class="light">-->
+
+                            <div>
+                                <h4>Доставка и Оплата</h4>
+                                <p class="nomargin">
+                                    Мы решили сэкономить Ваше время и предложить услугу «Доставка». Доставка выбранного
+                                    товара
+                                    осуществляется по
+                                    Москве и России. Доставка в другие страны – по договоренности.
+                                </p>
+                                <p class="nomargin">
+                                    Доставка осуществляется курьерской службой, предлагающей наиболее выгодный вариант
+                                    для Вашего
+                                    города.
+                                </p>
+                                <p class="nomargin">
+                                    При получении товара курьер предоставит Вам накладную и чек. Оплата за выезд курьера
+                                    взимается даже
+                                    в
+                                    том
+                                    случае, если Вы ничего не купили.
+                                </p>
+                                <p class="nomargin">
+                                    Оплата производится как наличными курьеру, так и банковским переводом на наш
+                                    расчетный счет, который
+                                    мы
+                                    отправим
+                                    на Ваш электронный адрес после оформления заказа. Просим заранее указать вариант
+                                    Оплаты, т.к. срок
+                                    зачисления
+                                    денежных средств - до 3-х рабочих дней.
+                                </p>
+                                <p>
+                                    Заказ аннулируется в случае, если оплата не будет получена в течение 5 рабочих дней
+                                    с момента
+                                    выставления
+                                    счета.
+                                </p>
+                            </div>
+
+                            <!--<hr class="light">-->
+
+                            <div>
+                                <h4>Обмен и возврат</h4>
+                                <p class="nomargin">
+                                    Согласно «Закону о защите прав потребителя» обмен и возврат возможен в срок до 14
+                                    дней с момента
+                                    доставки
+                                    заказа
+                                    клиенту.
+                                </p>
+                                <p class="nomargin">
+                                    Возврат товара надлежащего качества принимается, если сохранен его товарный вид
+                                    (упаковка, пломбы,
+                                    ярлыки),
+                                    товар не был в употреблении, а также сохранен документ, подтверждающий факт и
+                                    условия приобретения
+                                    товара
+                                    (товарный или кассовый чек).
+                                </p>
+                                <p>
+                                    Обмен товара также производится в течение 14 дней с момента доставки товара. Просим
+                                    заранее сообщить
+                                    о
+                                    Вашем
+                                    желании нашему менеджеру. Мы с удовольствием обменяем товар на аналогичный, нужного
+                                    размера, если он
+                                    есть в
+                                    наличии. Если нужного изделия нет на складе, мы известим Вас о его появлении или
+                                    вернем потраченную
+                                    сумму. В
+                                    случае Обмена товара, клиент оплачивает стоимость доставки курьером или возвращает
+                                    изделие в наш
+                                    шоу-рум.
+                                </p>
+                            </div>
+
+                            <!--<hr class="light">-->
+
+                            <h4 id="sizes" class="hidden-xs hidden-sm">Таблица размеров</h4>
+
+                            <table id="sizes-table" class="table table-bordered table-hover table-responsive">
+                                <thead>
+                                <tr>
+                                    <td>Размер Российский</td>
+                                    <td>Обхват груди (см)</td>
+                                    <td>Обхват талии (см)</td>
+                                    <td>Обхват бедер (см)</td>
+                                    <td>Размер Европейский</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>40</td>
+                                    <td>80-82</td>
+                                    <td>60-62</td>
+                                    <td>86-88</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>84-86</td>
+                                    <td>64-66</td>
+                                    <td>90-92</td>
+                                    <td>36</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>88-90</td>
+                                    <td>68-70</td>
+                                    <td>94-96</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>92-94</td>
+                                    <td>72-74</td>
+                                    <td>98-100</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>96-98</td>
+                                    <td>76-78</td>
+                                    <td>104-106</td>
+                                    <td>42</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>100-102</td>
+                                    <td>80-82</td>
+                                    <td>108-110</td>
+                                    <td>44</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Information -->
+
+            </div>
+            <!-- /.col-sm-12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
+
+    <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+    <div id="footer">
+        <div id="contacts"></div>
+        <div class="container">
+            <div class="col-md-3 col-sm-6">
+                <h4>Pages</h4>
+
+                <ul>
+                    <li><a href="text.html">About us</a>
+                    </li>
+                    <li><a href="text-left.html">Terms and conditions</a>
+                    </li>
+                    <li><a href="faq.html">FAQ</a>
+                    </li>
+                    <li><a href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h4>User section</h4>
+
+                <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                    </li>
+                    <li><a href="register.html">Regiter</a>
+                    </li>
+                </ul>
+
+                <hr class="hidden-md hidden-lg hidden-sm">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+            <div class="col-md-3 col-sm-6">
+
+                <h4>Top categories</h4>
+
+                <h5>Men</h5>
+
+                <ul>
+                    <li><a href="category.html">T-shirts</a>
+                    </li>
+                    <li><a href="category.html">Shirts</a>
+                    </li>
+                    <li><a href="category.html">Accessories</a>
+                    </li>
+                </ul>
+
+                <h5>Ladies</h5>
+                <ul>
+                    <li><a href="category.html">T-shirts</a>
+                    </li>
+                    <li><a href="category.html">Skirts</a>
+                    </li>
+                    <li><a href="category.html">Pants</a>
+                    </li>
+                    <li><a href="category.html">Accessories</a>
+                    </li>
+                </ul>
+
+                <hr class="hidden-md hidden-lg">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+            <div class="col-md-3 col-sm-6">
+
+                <h4>Where to find us</h4>
+
+                <p><strong>Obaju Ltd.</strong>
+                    <br>13/25 New Avenue
+                    <br>New Heaven
+                    <br>45Y 73J
+                    <br>England
+                    <br>
+                    <strong>Great Britain</strong>
+                </p>
+
+                <a href="contact.html">Go to contact page</a>
+
+                <hr class="hidden-md hidden-lg hidden-sm">
+
+            </div>
+            <!-- /.col-md-3 -->
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <h4>Get the news</h4>
+
+                <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                    turpis egestas.</p>
+
+                <form>
+                    <div class="input-group">
+
+                        <input type="text" class="form-control">
+
+                            <span class="input-group-btn">
+
+			<button class="btn btn-default" type="button">Subscribe!</button>
+
+		    </span>
+
+                    </div>
+                    <!-- /input-group -->
+                </form>
+
+                <hr>
+
+                <h4>Stay in touch</h4>
+
+                <p class="social">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </p>
+
+
+            </div>
+            <!-- /.col-md-3 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#footer -->
+
+    <!-- *** FOOTER END *** -->
+
+    <!-- *** COPYRIGHT ***
+_________________________________________________________ -->
+
+    <div id="copyright">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="pull-left">&copy; 2014. Minimal is responsive template by <a
+                        href="http://www.ondrejsvestka.cz" class="external">Ondrej Svestka</a>.</p>
+                <p class="pull-right">
+                    <img src="img/payment.png" alt="payments accepted">
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#copyright -->
+
+    <!-- *** COPYRIGHT END *** -->
+
+
+</div>
+<!-- /#all -->
+
+<!-- #### JAVASCRIPT FILES ### -->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/front.js"></script>
+
+
+</body>
+
+</html>
