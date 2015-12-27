@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="32a53200-a4ea-4a19-977f-f4d93d60b7b4" name="akondakova.freelance" url="http://akondakova.freelance.litskevich.ru">
+        <fileTransfer host="u236691.ftp.masterhost.ru" port="21" password="dfdadfcfdfd8dfc3dfc9dfcbdfd8df93dfc3dfc8dfc3dfc5" username="u236691">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

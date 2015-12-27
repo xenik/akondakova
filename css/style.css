@@ -957,56 +957,67 @@ button i.fa {
 }
 #content #blog-listing .post,
 #content #blog-homepage .post,
-#content #press .post {
+#content #press .post,
+#content #news .post {
   margin-bottom: 60px;
 }
 #content #blog-listing .post h2 a,
 #content #blog-homepage .post h2 a,
 #content #press .post h2 a,
+#content #news .post h2 a,
 #content #blog-listing .post h4 a,
 #content #blog-homepage .post h4 a,
-#content #press .post h4 a {
+#content #press .post h4 a,
+#content #news .post h4 a {
   color: #555555;
 }
 #content #blog-listing .post h2 a:hover,
 #content #blog-homepage .post h2 a:hover,
 #content #press .post h2 a:hover,
+#content #news .post h2 a:hover,
 #content #blog-listing .post h4 a:hover,
 #content #blog-homepage .post h4 a:hover,
-#content #press .post h4 a:hover {
+#content #press .post h4 a:hover,
+#content #news .post h4 a:hover {
   color: #c27baa;
 }
 #content #blog-listing .post .author-category,
 #content #blog-homepage .post .author-category,
-#content #press .post .author-category {
+#content #press .post .author-category,
+#content #news .post .author-category {
   color: #999999;
   font-style: italic;
 }
 #content #blog-listing .post .date-comments a,
 #content #blog-homepage .post .date-comments a,
-#content #press .post .date-comments a {
+#content #press .post .date-comments a,
+#content #news .post .date-comments a {
   color: #999999;
   margin-right: 20px;
 }
 #content #blog-listing .post .date-comments a:hover,
 #content #blog-homepage .post .date-comments a:hover,
-#content #press .post .date-comments a:hover {
+#content #press .post .date-comments a:hover,
+#content #news .post .date-comments a:hover {
   color: #c27baa;
 }
 #content #blog-listing .post .intro,
 #content #blog-homepage .post .intro,
-#content #press .post .intro {
+#content #press .post .intro,
+#content #news .post .intro {
   text-align: left;
 }
 #content #blog-listing .post .image,
 #content #blog-homepage .post .image,
-#content #press .post .image {
+#content #press .post .image,
+#content #news .post .image {
   margin-bottom: 10px;
   overflow: hidden;
 }
 #content #blog-listing .post .image img,
 #content #blog-homepage .post .image img,
-#content #press .post .image img {
+#content #press .post .image img,
+#content #news .post .image img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1014,32 +1025,41 @@ button i.fa {
 @media (max-width: 767px) {
   #content #blog-listing .post .image img.img-responsive,
   #content #blog-homepage .post .image img.img-responsive,
-  #content #press .post .image img.img-responsive {
+  #content #press .post .image img.img-responsive,
+  #content #news .post .image img.img-responsive {
     min-width: 100%;
   }
 }
 #content #blog-listing .post .read-more,
 #content #blog-homepage .post .read-more,
-#content #press .post .read-more {
+#content #press .post .read-more,
+#content #news .post .read-more {
   text-align: right;
 }
 #content #blog-listing .post:hover .image img,
 #content #blog-homepage .post:hover .image img,
-#content #press .post:hover .image img {
+#content #press .post:hover .image img,
+#content #news .post:hover .image img {
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-#content #blog-homepage .post {
+#content #blog-homepage .post,
+#content #news-content .post {
   margin-bottom: 60px;
 }
 #content #blog-homepage .post h2,
+#content #news-content .post h2,
 #content #blog-homepage .post h4,
+#content #news-content .post h4,
 #content #blog-homepage .post .author-category,
-#content #blog-homepage .post .read-more {
+#content #news-content .post .author-category,
+#content #blog-homepage .post .read-more,
+#content #news-content .post .read-more {
   text-align: center;
 }
-#content #blog-homepage .post .read-more {
+#content #blog-homepage .post .read-more,
+#content #news-content .post .read-more {
   margin-top: 20px;
 }
 #content #blog-post #post-content {
@@ -1958,4 +1978,20 @@ a.list-group-item.active > .badge,
     display: none;
     font-size: 0.6em;
   }
+}
+.brd-red {
+  border: 1px solid red !important;
+}
+.brd-green {
+  border: 1px solid green !important;
+}
+.brd-blue {
+  border: 1px solid blue !important;
+}
+.brd-black {
+  border: 1px solid black !important;
+}
+#navigation ul li {
+  font-weight: bold;
+  padding: 0 5px;
 }
