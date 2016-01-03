@@ -1995,3 +1995,6 @@ a.list-group-item.active > .badge,
   font-weight: bold;
   padding: 0 5px;
 }
+ul.navbar-space li {
+  padding: 3px 0;
+}
