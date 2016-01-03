@@ -1,6 +1,7 @@
+@import "modules/variables-custom.less";
 @import "_variables.less";
 
-#sizes-table{
+#sizes-table {
   text-align: center;
   thead {
     font-weight: bold;
@@ -12,11 +13,21 @@
   }
 }
 
-.brd-red{.brd(red);}
-.brd-green{.brd(green);}
-.brd-blue{.brd(blue);}
-.brd-black{.brd(black);}
+.brd-red {
+  .brd(red);
+}
 
+.brd-green {
+  .brd(green);
+}
+
+.brd-blue {
+  .brd(blue);
+}
+
+.brd-black {
+  .brd(black);
+}
 
 #navigation ul {
   li {
@@ -25,9 +36,52 @@
   }
 }
 
-ul.navbar-space
-{
-  li{
-    padding: 3px 0;
+ul.menu-bottom {
+  li {
+    padding: 1px 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+#all {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+  padding-top: @navbar-height;
+
+  #all-content {
+    display: table-row;
+    height: 100%;
+  }
+
+  #all-footer {
+    display: table-row;
+    width: 100%;
+  }
+
+  #map {
+    margin-bottom: 20px;
+  }
+
+  #intro-image {
+    //position: absolute;
+    //top: 0;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bgfill {
+    background: url('../img/bg.jpg') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: -@navbar-height;
   }
 }
