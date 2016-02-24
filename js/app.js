@@ -14,7 +14,9 @@ app.constant('URLS', {
         COLLECTIONS: '/collections',
         INFO:'/info',
         NEWS: '/news',
-        CONTACTS: '/contacts'
+        CONTACTS: '/contacts',
+        PRESS: '/press',
+        SHOP: '/shop'
     },
     PATHS: {
         TEMPLATES: 'views/',
@@ -55,6 +57,10 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
             templateUrl: path + 'info.html'
         });
 
+        $routeProvider.when(URLS.ROUTES.SHOP, {
+            templateUrl: path + 'shop.html'
+        });
+
         $routeProvider.when(URLS.ROUTES.NEWS, {
             templateUrl: path + 'news.html'
         });
@@ -62,6 +68,14 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
         $routeProvider.when(URLS.ROUTES.CONTACTS, {
             templateUrl: path + 'contacts.html',
             controller: 'contactsController as vm'
+        });
+
+        $routeProvider.when(URLS.ROUTES.PRESS, {
+            templateUrl: path + 'press.html'
+        });
+
+        $routeProvider.when(URLS.ROUTES.BASKET, {
+            templateUrl: path + 'basket.html'
         });
 
         $routeProvider.otherwise({
