@@ -16,7 +16,8 @@ app.constant('URLS', {
         NEWS: '/news',
         CONTACTS: '/contacts',
         PRESS: '/press',
-        SHOP: '/shop'
+        SHOP: '/shop',
+        BASKET: '/basket'
     },
     PATHS: {
         TEMPLATES: 'views/',
