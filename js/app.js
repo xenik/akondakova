@@ -19,7 +19,7 @@ app.constant('URLS', {
     PATHS: {
         TEMPLATES: 'views/',
         MENU: 'views/partials/_menu.html',
-        FOOTER: 'views/partials/_footer.html',
+        FOOTER: 'views/partials/_footer.html'
     }
 });
 
@@ -48,11 +48,11 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
         });
 
         $routeProvider.when(URLS.ROUTES.COLLECTIONS, {
-            templateUrl: path + 'collections.html',
+            templateUrl: path + 'collections.html'
         });
 
         $routeProvider.when(URLS.ROUTES.INFO, {
-            templateUrl: path + 'info.html',
+            templateUrl: path + 'info.html'
         });
 
         $routeProvider.when(URLS.ROUTES.NEWS, {
