@@ -4,11 +4,11 @@ var app = angular.module('app', ['ngCookies', 'ngRoute']);
 
 // CONSTANTS
 app.constant('URLS', {
-    IMAGES: {
-        UNKNOWN: '/images/unknown.png'
+  IMAGES: {
+    UNKNOWN: '/images/unknown.png'
         //AVATAR: '/JQFile/Avatar/'
-    },
-    ROUTES: {
+      },
+      ROUTES: {
         ROOT: '/',
         ABOUT: '/about',
         COLLECTIONS: '/collections',
@@ -19,21 +19,21 @@ app.constant('URLS', {
         SHOP: '/shop',
         BASKET: '/basket',
         DETAIL: '/detail'
-    },
-    PATHS: {
+      },
+      PATHS: {
         TEMPLATES: 'views/',
         MENU: 'views/partials/_menu.html',
         FOOTER: 'views/partials/_footer.html'
-    }
-});
+      }
+    });
 
 app.run(['$rootScope', 'URLS', '$location',
-    function ($rootScope, URLS, $location) {
-        $rootScope.URLS = URLS;
-    }]);
+  function ($rootScope, URLS, $location) {
+    $rootScope.URLS = URLS;
+  }]);
 
 app.config(['$routeProvider', '$locationProvider', 'URLS',
-    function ($routeProvider, $locationProvider, URLS) {
+  function ($routeProvider, $locationProvider, URLS) {
 
         //$locationProvider.hashPrefix('!');
 
@@ -43,49 +43,49 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
 
         // routing setup
         $routeProvider.when(URLS.ROUTES.ROOT, {
-            templateUrl: path + 'root.html',
-            controller: 'rootController as vm'
+          templateUrl: path + 'root.html',
+          controller: 'rootController as vm'
         });
 
         $routeProvider.when(URLS.ROUTES.ABOUT, {
-            templateUrl: path + 'about.html'
+          templateUrl: path + 'about.html'
         });
 
         $routeProvider.when(URLS.ROUTES.COLLECTIONS, {
-            templateUrl: path + 'collections.html'
+          templateUrl: path + 'collections.html'
         });
 
         $routeProvider.when(URLS.ROUTES.INFO, {
-            templateUrl: path + 'info.html'
+          templateUrl: path + 'info.html'
         });
 
         $routeProvider.when(URLS.ROUTES.SHOP, {
-            templateUrl: path + 'shop.html'
+          templateUrl: path + 'shop.html'
         });
 
         $routeProvider.when(URLS.ROUTES.NEWS, {
-            templateUrl: path + 'news.html'
+          templateUrl: path + 'news.html'
         });
 
         $routeProvider.when(URLS.ROUTES.CONTACTS, {
-            templateUrl: path + 'contacts.html',
-            controller: 'contactsController as vm'
+          templateUrl: path + 'contacts.html',
+          controller: 'contactsController as vm'
         });
 
         $routeProvider.when(URLS.ROUTES.PRESS, {
-            templateUrl: path + 'press.html'
+          templateUrl: path + 'press.html'
         });
 
         $routeProvider.when(URLS.ROUTES.BASKET, {
-            templateUrl: path + 'basket.html'
+          templateUrl: path + 'basket.html'
         });
 
         $routeProvider.when(URLS.ROUTES.DETAIL, {
-            templateUrl: path + 'detail.html'
+          templateUrl: path + 'detail.html'
         });
 
         $routeProvider.otherwise({
-            redirectTo: '/index.html'
+          redirectTo: '/index.html'
         });
 
 
@@ -95,4 +95,4 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
         //    enabled: true
         //    //requireBase: false
         //});
-    }]);
+      }]);
