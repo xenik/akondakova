@@ -17,7 +17,8 @@ app.constant('URLS', {
         CONTACTS: '/contacts',
         PRESS: '/press',
         SHOP: '/shop',
-        BASKET: '/basket'
+        BASKET: '/basket',
+        DETAIL: '/detail'
     },
     PATHS: {
         TEMPLATES: 'views/',
@@ -77,6 +78,10 @@ app.config(['$routeProvider', '$locationProvider', 'URLS',
 
         $routeProvider.when(URLS.ROUTES.BASKET, {
             templateUrl: path + 'basket.html'
+        });
+
+        $routeProvider.when(URLS.ROUTES.DETAIL, {
+            templateUrl: path + 'detail.html'
         });
 
         $routeProvider.otherwise({
